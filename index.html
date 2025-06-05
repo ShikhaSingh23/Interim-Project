@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-07Z5ZN10MT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-07Z5ZN10MT');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Haven - Your Fashion Destination</title>
+    <!-- Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #e0f7fa; /* Light cyan background */
+            color: #333; /* Default text color */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Container for content centering */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem; /* Equivalent to px-4 */
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-sm */
+            padding: 1rem 0; /* Equivalent to py-4 */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-title {
+            font-size: 1.5rem; /* Equivalent to text-2xl */
+            font-weight: bold;
+            color: #1a202c; /* Equivalent to text-gray-900 */
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem; /* Equivalent to space-x-6 */
+        }
+
+        .nav-link {
+            color: #4a5568; /* Equivalent to text-gray-600 */
+            text-decoration: none;
+            transition: color 0.2s ease-in-out; /* Equivalent to transition duration-200 */
+        }
+
+        .nav-link:hover {
+            color: #1a202c; /* Equivalent to hover:text-gray-900 */
+        }
+
+        /* Main Content Section (Hero) */
+        .hero-section {
+            background: linear-gradient(to bottom right, #6366f1, #9333ea); /* Equivalent to bg-gradient-to-br from-indigo-500 to-purple-600 */
+            color: #ffffff;
+            padding: 5rem 0; /* Equivalent to py-20 */
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 400px; /* Ensure sufficient height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section-content {
+            position: relative;
+            z-index: 10; /* Equivalent to relative z-10 */
+        }
+
+        .hero-title {
+            font-size: 2.25rem; /* Equivalent to text-4xl */
+            font-weight: 800; /* Equivalent to font-extrabold */
+            line-height: 1.25; /* Equivalent to leading-tight */
+            margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem; /* Equivalent to text-lg */
+            margin-bottom: 2.5rem; /* Equivalent to mb-10 */
+            max-width: 48rem; /* Equivalent to max-w-3xl */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-buttons {
+            display: grid;
+            grid-template-columns: 1fr; /* Default to single column */
+            gap: 2rem; /* Equivalent to gap-8 */
+            max-width: 64rem; /* Equivalent to max-w-4xl */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 768px) { /* Equivalent to md: breakpoint */
+            .hero-title {
+                font-size: 3.75rem; /* Equivalent to md:text-6xl */
+            }
+            .hero-subtitle {
+                font-size: 1.25rem; /* Equivalent to md:text-xl */
+            }
+            .category-buttons {
+                grid-template-columns: repeat(2, 1fr); /* Equivalent to md:grid-cols-2 */
+            }
+        }
+
+        .category-button {
+            background-color: #ffffff;
+            padding: 1.25rem 2rem; /* Equivalent to px-8 py-5 */
+            border-radius: 0.75rem; /* Equivalent to rounded-xl */
+            font-weight: 600; /* Equivalent to font-semibold */
+            font-size: 1.125rem; /* Equivalent to text-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Equivalent to shadow-lg */
+            transition: all 0.3s ease-in-out; /* Equivalent to transition duration-300 */
+            transform: translateY(0);
+            border: none;
+            cursor: pointer;
+        }
+
+        .category-button.womens {
+            color: #4338ca; /* Equivalent to text-indigo-700 */
+        }
+
+        .category-button.mens {
+            color: #7e22ce; /* Equivalent to text-purple-700 */
+        }
+
+        .category-button:hover {
+            background-color: #f7fafc; /* Equivalent to hover:bg-gray-100 */
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05); /* Equivalent to hover:shadow-xl */
+            transform: translateY(-4px); /* Equivalent to hover:-translate-y-1 */
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #1a202c; /* Equivalent to bg-gray-900 */
+            color: #d1d5db; /* Equivalent to text-gray-300 */
+            padding: 2.5rem 0; /* Equivalent to py-10 */
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem; /* Equivalent to space-x-6 */
+            margin-top: 1rem; /* Equivalent to mt-4 */
+        }
+
+        .footer-link {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+        }
+
+        /* Custom Message Box/Modal Structure */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            display: flex; /* Use flexbox to center content */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Ensure it's on top of everything */
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Custom modal content styling */
+        .modal-content {
+            background-color: #ffffff;
+            padding: 2.5rem; /* Increased padding */
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+            max-width: 90%;
+            width: 400px; /* Fixed width for the modal */
+            text-align: center;
+            position: relative; /* Needed for absolute positioning of close button */
+            transform: translateY(-20px); /* Initial slightly off-center for animation */
+            transition: transform 0.3s ease-in-out;
+        }
+        .modal-overlay.show .modal-content {
+            transform: translateY(0); /* Animate to center */
+        }
+        .modal-close-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #9ca3af; /* Light gray color */
+            transition: color 0.2s ease-in-out;
+        }
+        .modal-close-button:hover {
+            color: #374151; /* Darker on hover */
+        }
+        .modal-ok-button {
+            padding: 0.75rem 1.5rem; /* px-6 py-3 */
+            background-color: #2563eb; /* bg-blue-600 */
+            color: #ffffff;
+            font-weight: 600; /* font-semibold */
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            transition: background-color 0.3s ease; /* transition duration-300 */
+            border: none;
+            cursor: pointer;
+        }
+        .modal-ok-button:hover {
+            background-color: #1d4ed8; /* hover:bg-blue-700 */
+        }
+        .modal-message-text {
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 500; /* font-medium */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Custom Message Box/Modal Structure -->
+    <div id="custom-message-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close-button" onclick="hideMessage()">
+                &times;
+            </button>
+            <p id="modal-message" class="modal-message-text"></p>
+            <button onclick="hideMessage()" class="modal-ok-button">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="container navbar">
+            <a href="#" class="site-title">Style Haven</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Shop</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section (Hero) -->
+    <section class="hero-section">
+        <div class="container hero-section-content">
+            <h1 class="hero-title">
+                Welcome to Style Haven
+            </h1>
+            <p class="hero-subtitle">
+                Discover curated collections that inspire confidence and elevate your wardrobe.
+            </p>
+
+            <div class="category-buttons">
+                <!-- Simple Category Button 1 -->
+                <button onclick="showMessage('You clicked to explore Womenswear!')"
+                        class="category-button womens">
+                    Explore Womens wear
+                </button>
+                <!-- Simple Category Button 2 -->
+                <button onclick="showMessage('You clicked to explore Menswear!')"
+                        class="category-button mens">
+                    Explore Mens wear
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Style Haven. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Custom Message Box -->
+    <script>
+        // Get references to the modal elements
+        const messageModal = document.getElementById('custom-message-modal');
+        const modalMessage = document.getElementById('modal-message');
+
+        /**
+         * Displays a custom message modal with the given message.
+         * @param {string} message - The message to display in the modal.
+         */
+        function showMessage(message) {
+            modalMessage.textContent = message; // Set the message text
+            messageModal.classList.remove('hidden'); // Make the modal visible
+            messageModal.classList.add('show'); // Add 'show' class for fade-in effect
+            // Optional: Disable scrolling on the body while modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        /**
+         * Hides the custom message modal.
+         */
+        function hideMessage() {
+            messageModal.classList.remove('show'); // Remove 'show' class for fade-out effect
+            // Use a timeout to ensure the fade-out transition completes before hiding
+            setTimeout(() => {
+                messageModal.classList.add('hidden'); // Hide the modal after transition
+            }, 300); // Match this duration with your CSS transition duration
+            // Optional: Re-enable scrolling on the body
+            document.body.style.overflow = '';
+        }
+    </script>
+</body>
+</html>
